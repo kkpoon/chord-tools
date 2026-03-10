@@ -306,15 +306,17 @@ function initChordTools(deps) {
   onNotesInput();
 }
 
-initChordTools({
-  doc: document,
-  tonal: Tonal,
-  renderAbc: ABCJS.renderAbc,
-  chordInput: document.getElementById('chord'),
-  paper: document.getElementById('paper'),
-  noteListInput: document.getElementById('note-list'),
-  notesPaper: document.getElementById('notes-paper'),
-  results: document.getElementById('chord-results'),
-  detectedChords: document.getElementById('detected-chords'),
-  otherChords: document.getElementById('other-chords'),
+document.addEventListener('DOMContentLoaded', () => {
+  initChordTools({
+    doc: document,
+    tonal: Tonal,
+    renderAbc: ABCJS.renderAbc,
+    chordInput: document.getElementById('chord'),
+    paper: document.getElementById('paper'),
+    noteListInput: document.getElementById('note-list'),
+    notesPaper: document.getElementById('notes-paper'),
+    results: document.getElementById('chord-results'),
+    detectedChords: document.getElementById('detected-chords'),
+    otherChords: document.getElementById('other-chords'),
+  });
 });

@@ -4,20 +4,7 @@
   <title>Chord Visualizer</title>
   <script src="https://cdn.jsdelivr.net/npm/tonal/browser/tonal.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/abcjs@6.2.3/dist/abcjs-basic-min.js"></script>
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-    }
-    #paper {
-      margin-top: 20px;
-      width: 80%;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Chord Visualizer</h1>
@@ -31,9 +18,9 @@
   <div id="notes-paper"></div>
   <div id="chord-results"></div>
   <p><strong>Chords</strong></p>
-  <div id="detected-chords" style="width:80%; display:grid; grid-template-columns: repeat(4, 200px); gap:12px; justify-content:center; margin-top:12px;"></div>
-  <p style="margin-top:24px;"><strong>Other Possible Chords</strong></p>
-  <div id="other-chords" style="width:80%; display:grid; grid-template-columns: repeat(4, 200px); gap:12px; justify-content:center; margin-top:12px;"></div>
+  <div id="detected-chords" class="chord-grid"></div>
+  <p class="section-title"><strong>Other Possible Chords</strong></p>
+  <div id="other-chords" class="chord-grid"></div>
 
   <script src="index.js"></script>
 </body>

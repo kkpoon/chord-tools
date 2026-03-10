@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#paper {
+  margin-top: 20px;
+  width: 80%;
+  border: 1px solid #ccc;
+}
+
+.chord-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.section-title {
+  margin-top: 24px;
+}
+
+.chord-cell {
+  border: 1px solid #eee;
+  padding: 6px;
+  background: #fff;
+  width: 200px;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chord-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.chord-mount {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
